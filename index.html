@@ -104,7 +104,7 @@ The workshop targets an audience from graduate level to experienced theoretical 
 							<ul class="list-group list-group-flush">
                                 <li class="list-group-item"><b>[08:30-08:45]:</b>  Workshop Opening</li>
                                 <li class="list-group-item"><b>[08:45-09:30]:</b>  Invited Talk 1 <b>Thomas Beckers (Vanderbilt University)</b></li>
-                                <li class="list-group-item"><b>[9:30-10:15]:</b>  Invited Talk 2 <b>TBD </b></li>
+                                <li class="list-group-item"><b>[9:30-10:15]:</b>  Invited Talk 2 <b>Giulio Evangelisti / Sandra Hirche </b></li>
                                 <li class="list-group-item"><b>[10:15-10:45]:</b>  Coffee Break  </li>
                                 <li class="list-group-item"><b>[10:45-11:30]:</b> Invited Talk 3 <b> Sivaranjani Seetharaman (Purdue University)</b></li>
 								<li class="list-group-item"><b>[11:30-12:15]:</b> Invited Talk 4 <b> Rolf Findeisen (TU Darmstadt) </b></li>
@@ -138,7 +138,7 @@ The workshop targets an audience from graduate level to experienced theoretical 
 							 </div>
 
                                <h3>Title: A Composable Physics-informed Learning Framework
-								   [09:05-09:50]</h3>
+								   [08:45-09:30]</h3>
                             <p><b>Abstract:</b>
 								Reliable dynamical system models are key for operations like failure detection, design optimization, and safe control. However, first-principle models of complex systems such as water distribution networks, power grids, and other coupled dynamics suffer from time-consuming development and the need for expert knowledge. Dynamical models powered by machine learning face challenges like unknown trustworthiness, limited generalizability, and physical inconsistency, making them unsuitable for safe controller design. For that reason, we might want to decompose complex systems into subsystems to facilitate the modeling and verification process. However, that approach raises challenges like interconnecting ODE and PDE models while preserving physical correctness, quantifying and propagating uncertainty, and designing safe control algorithms.
 In this talk, I will present our results on data-driven port-Hamiltonian systems (PHS) to enable trustworthy and accurate compositional modeling of complex dynamics including ODEs and PDEs while preserving physical consistency. We use ML techniques with uncertainty quantification to learn the Hamiltonian function of each subsystem. In contrast to many physics-informed techniques that impose physics by penalty, the proposed data-driven model is physically correct by design. The framework is in particular suitable for composable learning as its physical consistency can be preserved under interconnection. Finally, data-driven port-Hamiltonian systems can be used in a robust control setting to establish safe learning-based control.
@@ -148,7 +148,76 @@ In this talk, I will present our results on data-driven port-Hamiltonian systems
 							Thomas Beckers is an Assistant Professor of Computer Science and Mechanical Engineering at Vanderbilt University. Before joining Vanderbilt, he was a postdoctoral researcher at the Department of Electrical and Systems Engineering, University of Pennsylvania, where he was member of the GRASP Lab, PRECISE Center and ASSET Center. In 2020, he earned his doctorate in Electrical Engineering at the Technical University of Munich (TUM), Germany. He received the B.Sc. and M.Sc. degree in Electrical Engineering in 2010 and 2013, respectively, from the Technical University of Braunschweig, Germany. In 2018, he was a visiting researcher at the University of California, Berkeley. He is a DAAD AInet fellow and was awarded with the Rhode & Schwarz Outstanding Dissertation prize. His research interests include physics-enhanced learning, nonparametric models, and safe learning-based control.
 
 
-							
+
+						<div class="row">
+                                <div class="col-4 col-12-medium">
+                                    <span class="image left">
+                                        <a href="https://www.professoren.tum.de/en/hirche-sandra/"><img class="center" src="images/Sandra.jpg" alt="Sandra Hirche"/></a>
+                                    </span>
+                                    <div class="content">
+                                        <p class="name"><a href="https://www.professoren.tum.de/en/hirche-sandra/">Giulio Evangelisti / Sandra Hirche</a></p>
+                                        <p>Technical University of Munich</p>
+                                    </div>
+                                </div>
+							 </div>
+
+                               <h3>Title: Learning & Control with Lagrangian-Gaussian Processes
+								   [9:30-10:15]</h3>
+                            <p><b>Abstract:</b>
+								The formulation of Gaussian Processes and other learning frameworks consistent with the relevant physical laws and mathematical models holds great promise for learning-based control of uncertain systems, improving data efficiency and reliability via their physical integrity. In particular, deep learning with neural networks has also shown auspicious results for physical systems. However, these methods lack a straightforward measure for uncertainty quantification, hampering the provision of guarantees, the applicability to robust & adaptive control, and leading to the inevitable requirement of low training errors only satisfied in the vicinity of the training domain. Thus, with the increasing uncertainty in physical systems, developing reliable yet tractable models is still a crucial ongoing issue.
+This talk will address these issues by focusing on a common methodology behind different learning methods applied to control uncertain systems: integrating physical knowledge and other structural priors into the learning framework on the one hand and enforcing structure via control with learning on the other hand. In particular, we introduce the concept of physically consistent Lagrangian-Gaussian Processes (L-GPs) for data-driven modeling of uncertain Lagrangian systems, which constrain the function space according to the energy components of the Lagrangian and the differential equation structure, analytically guaranteeing properties such as energy conservation and quadratic form. Recent theoretical and experimental results on L-GP-based control & observation are presented in the form of exponential stability guarantees as well as in numerical and physical experiments.
+
+								   </p>
+                            <p><b>Bio: </b>
+			Giulio Evangelisti received the B.Sc. and M.Sc. degrees in electrical engineering and information technology from the Technical University of Munich (TUM), Munich, Germany, in 2017 and 2019, respectively. Since 2021, he has been working toward the Ph.D. degree in electrical and computer engineering with the Chair of Information-oriented Control, TUM School of Computation, Information and Technology, TUM. From 2017 to 2018, he was with the Signal Generator Department, Measurement Technology Division, Rohde and Schwarz GmbH and Co. KG, Munich, Germany, and from 2019 to 2020, a full-time Control Engineer with Blickfeld GmbH. His research interests include the stability of data-driven control systems, physically consistent machine learning, nonlinear and passivity-based control, and robotics.
+
+
+
+							<div class="row">
+                                <div class="col-4 col-12-medium">
+                                    <span class="image left">
+                                        <a href="https://sivaranjanis.com/"><img class="center" src="images/Siva.jpg" alt="Sivaranjani Seetharaman"/></a>
+                                    </span>
+                                    <div class="content">
+                                        <p class="name"><a href="https://sivaranjanis.com/">Sivaranjani  Seetharaman</a></p>
+                                        <p>Purdue University</p>
+                                    </div>
+                                </div>
+							 </div>
+
+                               <h3>Title: Learning Dissipative Neural Dynamical Models
+								   [10:45-11:30]</h3>
+                            <p><b>Abstract:</b>
+							Deep learning-based dynamical system models, such as neural ordinary differential equations (neural ODEs) and physics-informed neural networks to capture the dynamical behavior of nonlinear systems have also recently gained attention. Particularly, such models can capture nonlinear dynamical behavior well beyond the ‘local’ region in the vicinity of the equilibrium that is captured by linear models, allowing us to expand the validity and usefulness of our control designs. However, when identifying models for control, it is typically not sufficient to simply obtain a model that approximates the dynamical behavior of the system. Rather, we would ideally like to preserve essential system properties such as stability in the identified models. One such control-relevant system property that is particularly useful is dissipativity, which provides a general framework to guarantee several crucial properties like L2 stability, passivity, conicity, and sector-boundedness, and can facilitate elegant distributed and compositional control designs in large-scale systems. Therefore, it is particularly attractive to learn neural dynamical models that capture relevant system dynamics, while preserving the dissipativity property in the model. In general, imposing dissipativity constraints during neural network training is a hard problem for which no known techniques exist. In this talk, we present a two-stage framework towards learning a dissipative neural dynamical system models. First, we learn an unconstrained neural dynamical model that closely approximates the system dynamics. Next, we derive sufficient conditions to perturb the weights of the neural dynamical model to ensure dissipativity, followed by perturbation of the biases to retain the fit of the model to the trajectories of the nonlinear system. We show that these two perturbation problems can be solved independently to obtain a neural dynamical model that is guaranteed to be dissipative while closely approximating the nonlinear system.
+								   </p>
+                            <p><b>Bio: </b>
+		Sivaranjani Seetharaman is an Assistant Professor in the School of Industrial Engineering at Purdue University. Previously, she was a postdoctoral researcher in the Department of Electrical Engineering at Texas A&M University, and the Texas A&M Research Institute for Foundations of Interdisciplinary Data Science (FIDS). She received her PhD in Electrical Engineering from the University of Notre Dame, and her Master’s and undergraduate degrees, also in Electrical Engineering, from the Indian Institute of Science, and PES Institute of Technology, respectively. Sivaranjani has been a recipient of the Schlumberger Foundation Faculty for the Future fellowship, the Zonta International Amelia Earhart fellowship, and the Notre Dame Ethical Leaders in STEM fellowship. She was named among MIT Technology Review's Innovators Under 35 (TR35) in 2023, and the MIT Rising Stars in EECS in 2018. Her research interests lie at the intersection of control and machine learning in large-scale networked systems, with applications to energy systems, transportation networks, and human-autonomous systems.
+
+
+
+
+													<div class="row">
+                                <div class="col-4 col-12-medium">
+                                    <span class="image left">
+                                        <a href="https://ifatwww.et.uni-magdeburg.de/syst/about_us/people/findeisen/"><img class="center" src="images/Rolf.jpg" alt="Rolf Findeisen"/></a>
+                                    </span>
+                                    <div class="content">
+                                        <p class="name"><a href="https://ifatwww.et.uni-magdeburg.de/syst/about_us/people/findeisen/">Rolf Findeisen</a></p>
+                                        <p> Otto-von-Guericke University Magdeburg</p>
+                                    </div>
+                                </div>
+							 </div>
+
+                               <h3>Title: Integrating Physics in Learning for Model Based Control
+								   [10:45-11:30]</h3>
+                            <p><b>Abstract:</b>
+								TBD
+
+								   </p>
+                            <p><b>Bio: </b>
+	Rolf Findeisen studied engineering cybernetics at the University of Stuttgart and chemical engineering  at the University of Wisconsin – Madison. He began his doctoral studies at ETH Zurich's, which he completed in 2004 following his doctoral father to the University of Stuttgart. 2007, Rolf was appointed professor at the Institute of Automatic Control at Otto-von-Guericke University Magdeburg. Since August 2021, he heads the Control and Cyber-physical Systems Laboratory at the Technical University of Darmstadt.
+Rolf is engaged in method development in the area of systems theory and control engineering, focusing on optimization-based and predictive control; fusing machine learning approaches such as Gaussian processes and neural networks with model based control providing guarantees; and control of complex, distributed systems via communication networks.
+
 
 
 						</section>
